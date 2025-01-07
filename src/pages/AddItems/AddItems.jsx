@@ -31,15 +31,14 @@ function AddItems() {
             requirements,
             responsibilities,
             status,
-            owner_email: ownerEmail, // Automatically filled
+            owner_email: ownerEmail, 
             owner_name,
             images
         };
 
         console.log(newItem);
 
-        // Send the new item to the server
-        fetch(`http://localhost:3000/items`, {
+        fetch(`https://backtome.vercel.app/items`, {
             method: 'POST',
             headers: {
                 'Content-Type': "application/json"

@@ -18,7 +18,7 @@ const ItemsDetails = () => {
     });
 
     useEffect(() => {
-        fetch(`http://localhost:3000/items/${id}`)
+        fetch(`https://backtome.vercel.app/items/${id}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data);
@@ -51,7 +51,7 @@ const ItemsDetails = () => {
             recoveredPersonImage: user.photoURL || user.image,
         };
 
-        fetch('http://localhost:3000/recoveries', {
+        fetch('https://backtome.vercel.app/recoveries', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ const ItemsDetails = () => {
         .then(res => res.json())
         .then(data => {
             Swal.fire('Recovered!', 'The item has been marked as recovered.', 'success');
-            return fetch(`http://localhost:3000/items/${item._id}`, {
+            return fetch(`https://backtome.vercel.app/items/${item._id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const ItemsDetails = () => {
             });
         })
         .then(() => {
-            setModalOpen(false); // Close the modal
+            setModalOpen(false); 
             navigate('/items');
         })
         .catch(error => {

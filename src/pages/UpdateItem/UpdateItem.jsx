@@ -43,7 +43,7 @@ function UpdateItem() {
             images: form.images.value,
         };
 
-        fetch(`http://localhost:3000/items/${_id}`, {
+        fetch(`https://backtome.vercel.app/items/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': "application/json"

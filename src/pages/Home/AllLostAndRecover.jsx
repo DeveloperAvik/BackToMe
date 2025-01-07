@@ -5,7 +5,7 @@ function AllLostAndRecover() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/items")
+        fetch("https://backtome.vercel.app/items")
             .then(res => res.json())
             .then(data => {
                 const sortedItems = data.sort((a, b) => new Date(b.posting_date) - new Date(a.posting_date));

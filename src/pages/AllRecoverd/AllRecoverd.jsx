@@ -11,7 +11,7 @@ function AllRecovered() {
             setUserId(loggedInUser);
         }
 
-        fetch("http://localhost:3000/recoverItems")
+        fetch("https://backtome.vercel.app/recoverItems")
             .then((res) => res.json())
             .then((data) => {
                 const userItems = data.filter(item => item.owner?.user_id === loggedInUser); 

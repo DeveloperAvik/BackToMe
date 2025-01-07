@@ -26,12 +26,12 @@ const router = createBrowserRouter([
             {
                 path: "/allItems",
                 element: <AllItems />,
-                loader: () => fetch('http://localhost:3000/items')
+                loader: () => fetch('https://backtome.vercel.app/items')
             },
             {
                 path:"/updateItems/:id",
                 element: <PrivateRoute> <UpdateItem/> </PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:3000/items/${params.id}`)
+                loader: ({ params }) => fetch(`https://backtome.vercel.app/items/${params.id}`)
 
             },
             {
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
                         <ItemsDetails />
                     </PrivateRoute>
                 ),
-                loader: ({ params }) => fetch(`http://localhost:3000/items/${params.id}`),
+                loader: ({ params }) => fetch(`https://backtome.vercel.app/items/${params.id}`),
             },
             {
                 path: "/register",

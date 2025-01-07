@@ -17,7 +17,7 @@ function AllItemsCard({ item, onDelete }) {
 
         if (confirmed.isConfirmed) {
             try {
-                const response = await fetch(`http://localhost:3000/items/${_id}`, {
+                const response = await fetch(`https://backtome.vercel.app/items/${_id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',

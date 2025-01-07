@@ -1,12 +1,11 @@
-// src/pages/SingIn/SingIn.jsx
 
-import { useAuth } from "../../context/useAuth";  // Import the custom hook
+import { useAuth } from "../../context/useAuth";  
 import SocialLogin from "../../shared/SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function SingIn() {
-  const { signInUser } = useAuth();  // Use the custom hook to get the function
+  const { signInUser } = useAuth();  
   const location = useLocation();
   const navigate = useNavigate();
   
@@ -26,7 +25,7 @@ function SingIn() {
         console.log(result.user);
         const user = { user: email };
         axios
-          .post("http://localhost:5000/jwt", user, { withCredentials: true })
+          .post("https://backtome.vercel.app/jwt", user, { withCredentials: true })
           .then((res) => {
             console.log(res.data);
           });

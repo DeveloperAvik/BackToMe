@@ -11,7 +11,7 @@ function LostItems() {
             setUserId(loggedInUser);
         }
 
-        fetch("http://localhost:3000/lostItems")
+        fetch("https://backtome.vercel.app/lostItems")
             .then((res) => res.json())
             .then((data) => {
                 const userItems = data.filter(

@@ -9,17 +9,15 @@ function AllItems() {
     const [viewType, setViewType] = useState('card');
 
     useEffect(() => {
-        fetch("http://localhost:3000/items")
+        fetch("https://backtome.vercel.app/items")
             .then(res => res.json())
             .then(data => setAllitems(data));
     }, []);
 
-    // Handle the deletion of an item
     const handleDelete = (id) => {
         setAllitems(prevItems => prevItems.filter(item => item._id !== id));
     };
 
-    // Toggle between card and table view
     const toggleView = (type) => {
         setViewType(type);
     };
@@ -29,14 +27,14 @@ function AllItems() {
             <h1 className="text-3xl font-bold text-center mt-10">All Items</h1>
             <div className="flex justify-end mt-6 space-x-4">
                 <button
-                    onClick={() => toggleView('card')} // Change to card view
+                    onClick={() => toggleView('card')} 
                     className="flex items-center space-x-2 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-700 transition duration-300"
                 >
                     <BsListColumnsReverse />
                     <span>Card Items</span>
                 </button>
                 <button
-                    onClick={() => toggleView('table')} // Change to table view
+                    onClick={() => toggleView('table')} 
                     className="flex items-center space-x-2 bg-green-500 text-white p-2 rounded-lg hover:bg-green-700 transition duration-300"
                 >
                     <PiTextColumnsBold />
