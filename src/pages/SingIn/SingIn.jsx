@@ -1,14 +1,14 @@
 
-import { useAuth } from "../../context/useAuth";  
+import { useAuth } from "../../context/useAuth";
 import SocialLogin from "../../shared/SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function SingIn() {
-  const { signInUser } = useAuth();  
+  const { signInUser } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   const from = location.state || "/";
 
   const handleLogin = (e) => {
