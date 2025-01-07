@@ -1,0 +1,559 @@
+[
+    {
+        "item_id": "12346",
+        "title": "Silver Watch",
+        "description": "A silver wristwatch with a metal band.",
+        "category": "Watch",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u002",
+            "name": "Jane Smith",
+            "contact": {
+                "phone": "+1987654321",
+                "email": "janesmith@example.com"
+            },
+            "location": {
+                "latitude": "34.052235",
+                "longitude": "-118.243683"
+            },
+            "last_seen": "2024-12-23T15:00:00Z"
+        },
+        "posting_date": "2024-12-24T08:00:00Z",
+        "tags": [
+            "watch",
+            "silver",
+            "metal"
+        ],
+        "images": "https://i.ibb.co.com/znfcW18/slvr-wtch.webp",
+        "found_status": "Not Found",
+        "reward_offered": true
+    },
+    {
+        "item_id": "12347",
+        "title": "Black Backpack",
+        "description": "A black leather backpack with a few books and a water bottle.",
+        "category": "Bag",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u003",
+            "name": "Alice Johnson",
+            "contact": {
+                "phone": "+1345678901",
+                "email": "alicejohnson@example.com"
+            },
+            "location": {
+                "latitude": "51.507351",
+                "longitude": "-0.127758"
+            },
+            "last_seen": "2024-12-22T12:00:00Z"
+        },
+        "posting_date": "2024-12-23T09:00:00Z",
+        "tags": [
+            "backpack",
+            "black",
+            "leather"
+        ],
+        "images": "https://i.ibb.co.com/Mp79BBC/blck-bgpk.webp",
+        "found_status": "Not Found",
+        "reward_offered": true
+    },
+    {
+        "item_id": "12348",
+        "title": "Red Sunglasses",
+        "description": "Stylish red sunglasses with a case.",
+        "category": "Accessories",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u004",
+            "name": "Michael Lee",
+            "contact": {
+                "phone": "+1122334455",
+                "email": "michaellee@example.com"
+            },
+            "location": {
+                "latitude": "48.856613",
+                "longitude": "2.352222"
+            },
+            "last_seen": "2024-12-24T16:45:00Z"
+        },
+        "posting_date": "2024-12-25T10:00:00Z",
+        "tags": [
+            "sunglasses",
+            "red",
+            "fashion"
+        ],
+        "images": "https://i.ibb.co.com/0CLjsP2/rd-sngls.jpg",
+        "found_status": "Not Found",
+        "reward_offered": false
+    },
+    {
+        "item_id": "12349",
+        "title": "Green Scarf",
+        "description": "A cozy green wool scarf.",
+        "category": "Clothing",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u005",
+            "name": "David Brown",
+            "contact": {
+                "phone": "+1444556677",
+                "email": "davidbrown@example.com"
+            },
+            "location": {
+                "latitude": "40.730610",
+                "longitude": "-73.935242"
+            },
+            "last_seen": "2024-12-20T10:30:00Z"
+        },
+        "posting_date": "2024-12-21T14:00:00Z",
+        "tags": [
+            "scarf",
+            "green",
+            "wool"
+        ],
+        "images": "https://i.ibb.co.com/jr7KG9K/grn-scrf.webp",
+        "found_status": "Not Found",
+        "reward_offered": false
+    },
+    {
+        "item_id": "12350",
+        "title": "Black Headphones",
+        "description": "Over-ear black headphones with a wireless feature.",
+        "category": "Electronics",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u006",
+            "name": "Sophia Green",
+            "contact": {
+                "phone": "+1555667788",
+                "email": "sophiagreen@example.com"
+            },
+            "location": {
+                "latitude": "37.774929",
+                "longitude": "-122.419418"
+            },
+            "last_seen": "2024-12-19T18:00:00Z"
+        },
+        "posting_date": "2024-12-20T09:00:00Z",
+        "tags": [
+            "headphones",
+            "black",
+            "wireless"
+        ],
+        "images": "https://i.ibb.co.com/dJBs9Gc/blck-hdphns.jpg",
+        "found_status": "Not Found",
+        "reward_offered": true
+    },
+    {
+        "item_id": "12351",
+        "title": "Blue Jeans",
+        "description": "A pair of blue denim jeans.",
+        "category": "Clothing",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u007",
+            "name": "Lucas White",
+            "contact": {
+                "phone": "+1777888999",
+                "email": "lucaswhite@example.com"
+            },
+            "location": {
+                "latitude": "39.739236",
+                "longitude": "-104.990251"
+            },
+            "last_seen": "2024-12-18T14:15:00Z"
+        },
+        "posting_date": "2024-12-19T12:00:00Z",
+        "tags": [
+            "jeans",
+            "blue",
+            "denim"
+        ],
+        "images": "https://i.ibb.co.com/tCgrPg9/bl-jns.webp",
+        "found_status": "Not Found",
+        "reward_offered": false
+    },
+    {
+        "item_id": "12352",
+        "title": "Yellow Hat",
+        "description": "A yellow baseball cap with a logo.",
+        "category": "Accessories",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u008",
+            "name": "Olivia Harris",
+            "contact": {
+                "phone": "+1666777888",
+                "email": "oliviaharris@example.com"
+            },
+            "location": {
+                "latitude": "34.052235",
+                "longitude": "-118.243683"
+            },
+            "last_seen": "2024-12-17T13:00:00Z"
+        },
+        "posting_date": "2024-12-18T11:00:00Z",
+        "tags": [
+            "hat",
+            "yellow",
+            "baseball"
+        ],
+        "images": "https://i.ibb.co.com/DDrf8DB/ylw-ht.jpg",
+        "found_status": "Not Found",
+        "reward_offered": false
+    },
+    {
+        "item_id": "12353",
+        "title": "Brown Gloves",
+        "description": "A pair of brown leather gloves.",
+        "category": "Clothing",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u009",
+            "name": "Ethan Scott",
+            "contact": {
+                "phone": "+1999888777",
+                "email": "ethanscott@example.com"
+            },
+            "location": {
+                "latitude": "41.878113",
+                "longitude": "-87.629799"
+            },
+            "last_seen": "2024-12-16T17:00:00Z"
+        },
+        "posting_date": "2024-12-17T10:00:00Z",
+        "tags": [
+            "gloves",
+            "brown",
+            "leather"
+        ],
+        "images": "https://i.ibb.co.com/pjF81HG/brwn-glvs.jpg",
+        "found_status": "Not Found",
+        "reward_offered": true
+    },
+    {
+        "item_id": "12354",
+        "title": "Purple Umbrella",
+        "description": "A purple umbrella with a silver handle.",
+        "category": "Accessories",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u010",
+            "name": "Isabella Taylor",
+            "contact": {
+                "phone": "+1222333444",
+                "email": "isabellataylor@example.com"
+            },
+            "location": {
+                "latitude": "42.360081",
+                "longitude": "-71.058884"
+            },
+            "last_seen": "2024-12-15T14:00:00Z"
+        },
+        "posting_date": "2024-12-16T13:00:00Z",
+        "tags": [
+            "umbrella",
+            "purple",
+            "silver"
+        ],
+        "images": "https://i.ibb.co.com/d0KWHyK/prpl-umbrla.webp",
+        "found_status": "Not Found",
+        "reward_offered": false
+    },
+    {
+        "item_id": "22345",
+        "title": "Gold Ring",
+        "description": "A gold ring with a small diamond in the center.",
+        "category": "Jewelry",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u011",
+            "name": "Emma Williams",
+            "contact": {
+                "phone": "+1234432111",
+                "email": "emmawilliams@example.com"
+            },
+            "location": {
+                "latitude": "40.7580",
+                "longitude": "-73.9855"
+            },
+            "last_seen": "2024-12-24T12:00:00Z"
+        },
+        "posting_date": "2024-12-25T09:00:00Z",
+        "tags": [
+            "ring",
+            "gold",
+            "diamond"
+        ],
+        "images": "https://i.ibb.co.com/Bs0JR0x/gld-rng.webp",
+        "found_status": "Recovered",
+        "reward_offered": true
+    },
+    {
+        "item_id": "22346",
+        "title": "Leather Jacket",
+        "description": "A black leather jacket with silver zippers.",
+        "category": "Clothing",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u012",
+            "name": "Liam Martinez",
+            "contact": {
+                "phone": "+1999887766",
+                "email": "liammartinez@example.com"
+            },
+            "location": {
+                "latitude": "34.0522",
+                "longitude": "-118.2437"
+            },
+            "last_seen": "2024-12-22T17:30:00Z"
+        },
+        "posting_date": "2024-12-23T11:00:00Z",
+        "tags": [
+            "jacket",
+            "leather",
+            "black"
+        ],
+        "images": "https://i.ibb.co.com/2W3X1Qm/lthr-jckt.jpg",
+        "found_status": "Recovered",
+        "reward_offered": false
+    },
+    {
+        "item_id": "22347",
+        "title": "Bluetooth Speaker",
+        "description": "Portable blue Bluetooth speaker.",
+        "category": "Electronics",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u013",
+            "name": "Sophia Robinson",
+            "contact": {
+                "phone": "+1345678900",
+                "email": "sophiarobinson@example.com"
+            },
+            "location": {
+                "latitude": "51.5074",
+                "longitude": "-0.1278"
+            },
+            "last_seen": "2024-12-23T19:00:00Z"
+        },
+        "posting_date": "2024-12-24T14:30:00Z",
+        "tags": [
+            "speaker",
+            "bluetooth",
+            "blue"
+        ],
+        "images": "https://i.ibb.co.com/WgJ7QHC/blth-spkr.webp",
+        "found_status": "Recovered",
+        "reward_offered": true
+    },
+    {
+        "item_id": "22348",
+        "title": "Pink Wallet",
+        "description": "A pink leather wallet with a zipper and some cards.",
+        "category": "Wallet",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u014",
+            "name": "Mason Carter",
+            "contact": {
+                "phone": "+1222333444",
+                "email": "masoncarter@example.com"
+            },
+            "location": {
+                "latitude": "48.8566",
+                "longitude": "2.3522"
+            },
+            "last_seen": "2024-12-21T16:00:00Z"
+        },
+        "posting_date": "2024-12-22T13:00:00Z",
+        "tags": [
+            "wallet",
+            "pink",
+            "leather"
+        ],
+        "images": "https://i.ibb.co.com/7rVxktR/pnk-wllt.jpg",
+        "found_status": "Recovered",
+        "reward_offered": false
+    },
+    {
+        "item_id": "22349",
+        "title": "Brown Sunglasses",
+        "description": "Classic brown sunglasses with a black case.",
+        "category": "Accessories",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u015",
+            "name": "Charlotte King",
+            "contact": {
+                "phone": "+1777888999",
+                "email": "charlotteking@example.com"
+            },
+            "location": {
+                "latitude": "39.7392",
+                "longitude": "-104.9903"
+            },
+            "last_seen": "2024-12-20T14:00:00Z"
+        },
+        "posting_date": "2024-12-21T12:00:00Z",
+        "tags": [
+            "sunglasses",
+            "brown",
+            "classic"
+        ],
+        "images": "https://i.ibb.co.com/0QwVzZc/brwn-sngls.webp",
+        "found_status": "Recovered",
+        "reward_offered": true
+    },
+    {
+        "item_id": "22350",
+        "title": "Sports Water Bottle",
+        "description": "A blue sports water bottle with a twist cap.",
+        "category": "Accessories",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u016",
+            "name": "Oliver Lee",
+            "contact": {
+                "phone": "+1666777888",
+                "email": "oliverlee@example.com"
+            },
+            "location": {
+                "latitude": "37.7749",
+                "longitude": "-122.4194"
+            },
+            "last_seen": "2024-12-18T10:30:00Z"
+        },
+        "posting_date": "2024-12-19T08:00:00Z",
+        "tags": [
+            "bottle",
+            "sports",
+            "blue"
+        ],
+        "images": "https://i.ibb.co.com/LnPJv5k/sprts-wtr-btl.webp",
+        "found_status": "Recovered",
+        "reward_offered": false
+    },
+    {
+        "item_id": "22351",
+        "title": "Black Backpack",
+        "description": "A black backpack with multiple compartments and a laptop sleeve.",
+        "category": "Bag",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u017",
+            "name": "Benjamin Scott",
+            "contact": {
+                "phone": "+1444556677",
+                "email": "benjaminscott@example.com"
+            },
+            "location": {
+                "latitude": "41.8781",
+                "longitude": "-87.6298"
+            },
+            "last_seen": "2024-12-17T13:30:00Z"
+        },
+        "posting_date": "2024-12-18T14:30:00Z",
+        "tags": [
+            "backpack",
+            "black",
+            "laptop"
+        ],
+        "images": "https://i.ibb.co.com/Mp79BBC/blck-bgpk.webp",
+        "found_status": "Recovered",
+        "reward_offered": true
+    },
+    {
+        "item_id": "22352",
+        "title": "Green Jacket",
+        "description": "A green jacket with a zipper and pockets.",
+        "category": "Clothing",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u018",
+            "name": "Aiden Johnson",
+            "contact": {
+                "phone": "+1888999777",
+                "email": "aidenjohnson@example.com"
+            },
+            "location": {
+                "latitude": "42.3601",
+                "longitude": "-71.0589"
+            },
+            "last_seen": "2024-12-15T09:00:00Z"
+        },
+        "posting_date": "2024-12-16T10:00:00Z",
+        "tags": [
+            "jacket",
+            "green",
+            "casual"
+        ],
+        "images": "https://i.ibb.co.com/4Sq79Q7/grn-jckt.webp",
+        "found_status": "Recovered",
+        "reward_offered": false
+    },
+    {
+        "item_id": "22353",
+        "title": "Red Scarf",
+        "description": "A red wool scarf with fringe.",
+        "category": "Clothing",
+        "status": "Recovered",
+        "owner": {
+            "user_id": "u019",
+            "name": "Isla Brown",
+            "contact": {
+                "phone": "+1777555444",
+                "email": "islabrown@example.com"
+            },
+            "location": {
+                "latitude": "33.8688",
+                "longitude": "151.2093"
+            },
+            "last_seen": "2024-12-14T14:00:00Z"
+        },
+        "posting_date": "2024-12-15T11:00:00Z",
+        "tags": [
+            "scarf",
+            "red",
+            "wool"
+        ],
+        "images": "https://i.ibb.co.com/cCvJLvK/rd-scrf.jpg",
+        "found_status": "Recovered",
+        "reward_offered": true
+    }
+]
+
+
+
+
+[
+    {
+        "item_id": "12346",
+        "title": "Silver Watch",
+        "description": "A silver wristwatch with a metal band.",
+        "category": "Watch",
+        "status": "Lost",
+        "owner": {
+            "user_id": "u002",
+            "name": "Jane Smith",
+            "contact": {
+                "phone": "+1987654321",
+                "email": "janesmith@example.com"
+            },
+            "location": {
+                "latitude": "34.052235",
+                "longitude": "-118.243683"
+            },
+            "last_seen": "2024-12-23T15:00:00Z"
+        },
+        "posting_date": "2024-12-24T08:00:00Z",
+        "tags": [
+            "watch",
+            "silver",
+            "metal"
+        ],
+        "images": "https://i.ibb.co.com/znfcW18/slvr-wtch.webp",
+        "found_status": "Not Found",
+        "reward_offered": true
+    },
+]
