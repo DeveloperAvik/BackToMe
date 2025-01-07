@@ -6,6 +6,7 @@ import SocialLogin from "../../shared/SocialLogin";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Register() {
     const { createUser } = useContext(AuthContext);
@@ -56,6 +57,10 @@ function Register() {
 
     return (
         <div>
+             <Helmet>
+                <title>Register - BackToMe</title>
+                <meta name="description" content="This is the homepage where you can find lost and recovered items." />
+            </Helmet>
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left w-96">

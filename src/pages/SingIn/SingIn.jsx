@@ -3,6 +3,7 @@ import { useAuth } from "../../context/useAuth";
 import SocialLogin from "../../shared/SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 function SingIn() {
   const { signInUser } = useAuth();
@@ -38,6 +39,10 @@ function SingIn() {
 
   return (
     <>
+      <Helmet>
+        <title>SingIn - BackToMe</title>
+        <meta name="description" content="This is the homepage where you can find lost and recovered items." />
+      </Helmet>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left w-96">
