@@ -31,7 +31,7 @@ function AllItemsCard({ item, onDelete }) {
                         icon: 'success',
                         confirmButtonText: 'Ok',
                     });
-                    onDelete(_id); 
+                    onDelete(_id);
                 } else {
                     Swal.fire({
                         title: 'Error!',
@@ -67,7 +67,7 @@ function AllItemsCard({ item, onDelete }) {
                         <p><strong>Found Status:</strong> {status}</p>
                     </div>
                 </div>
-                <div className="card-footer text-center p-4">
+                <div className="card-footer text-center p-4 flex gap-2">
                     <Link to={`/items/${_id}`}>
                         <button className="btn btn-primary">View Details</button>
                     </Link>
@@ -78,6 +78,11 @@ function AllItemsCard({ item, onDelete }) {
                     >
                         Delete
                     </button>
+                    <div>
+                        <Link to={`/updateItems/${_id}`}>
+                            <button className='btn '>Update </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

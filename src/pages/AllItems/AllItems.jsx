@@ -1,22 +1,31 @@
-import { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import AllItemsCard from './AllItemsCard';
 import { BsListColumnsReverse } from "react-icons/bs";
 import { PiTextColumnsBold } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { useState } from 'react';
 
 function AllItems() {
-    const [allItems, setAllitems] = useState([]);
+    const allItems = useLoaderData();
     const [viewType, setViewType] = useState('card');
+    const [items, setItems] = useState(allItems);
 
-    useEffect(() => {
-        fetch("https://backtome.vercel.app/items")
-            .then(res => res.json())
-            .then(data => setAllitems(data));
-    }, []);
+    const handleDelete = async (id) => {
+        try {
+            const response = await fetch(`https://backtome.vercel.app/items/${id}`, {
+                method: 'DELETE',
+            });
 
-    const handleDelete = (id) => {
-        setAllitems(prevItems => prevItems.filter(item => item._id !== id));
+            if (response.ok) {
+                setItems(prevItems => prevItems.filter(item => item._id !== id));
+            } else {
+                alert('Failed to delete the item.');
+            }
+        } catch (error) {
+            console.error('Error deleting item:', error);
+            alert('There was an error deleting the item.');
+        }
     };
 
     const toggleView = (type) => {
@@ -24,7 +33,6 @@ function AllItems() {
     };
 
     return (
-
         <>
             <Helmet>
                 <title>All Items - BackToMe</title>
@@ -49,22 +57,25 @@ function AllItems() {
                     </button>
                 </div>
 
-                {/* Render the items in the chosen view type */}
                 {viewType === 'card' ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                         {
-                            allItems.length === 0 ? (
+                            items.length === 0 ? (
                                 <p className="text-center text-xl col-span-full">No items found.</p>
                             ) : (
-                                allItems.map(item => (
-                                    <AllItemsCard key={item._id} item={item} onDelete={handleDelete} />
+                                items.map(item => (
+                                    <AllItemsCard
+                                        key={item._id}
+                                        item={item}
+                                        onDelete={handleDelete}
+                                    />
                                 ))
                             )
                         }
                     </div>
                 ) : (
                     <div className="mt-10">
-                        {allItems.length === 0 ? (
+                        {items.length === 0 ? (
                             <p className="text-center text-xl">No items found.</p>
                         ) : (
                             <table className="min-w-full border-collapse border border-gray-300">
@@ -77,17 +88,28 @@ function AllItems() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {allItems.map(item => (
+                                    {items.map(item => (
                                         <tr key={item._id} className="hover:bg-gray-50">
                                             <td className="border px-4 py-2">{item.title}</td>
                                             <td className="border px-4 py-2">{item.category}</td>
                                             <td className="border px-4 py-2">{item.status}</td>
-                                            <td className="border px-4 py-2">
+                                            <td className="border px-4 py-3 gap-2 flex">
                                                 <button className="bg-blue-500 text-white py-1 px-3 rounded-lg hover:bg-blue-700">
                                                     <Link to={`/items/${item._id}`}>
                                                         View Details
                                                     </Link>
                                                 </button>
+                                                <button
+                                                    onClick={() => handleDelete(item._id)}
+                                                    className="bg-red-500 text-white py-1 px-3 rounded-lg hover:bg-red-700 ml-2"
+                                                >
+                                                    Delete
+                                                </button>
+                                                <div>
+                                                    <Link to={`/updateItems/${item._id}`}>
+                                                        <button className='btn '>Update </button>
+                                                    </Link>
+                                                </div>
                                             </td>
                                         </tr>
                                     ))}
