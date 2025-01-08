@@ -6,12 +6,10 @@ import AuthContext from "./AuthContext";
 
 const googleProvider = new GoogleAuthProvider();
 
-// AuthProvider component
 function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Firebase authentication methods
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
@@ -34,7 +32,6 @@ function AuthProvider({ children }) {
     });
   };
 
-  // Listen for auth state changes
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -46,7 +43,6 @@ function AuthProvider({ children }) {
     };
   }, []);
 
-  // Provide the context value
   const authInfo = {
     user,
     loading,
