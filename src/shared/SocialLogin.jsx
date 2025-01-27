@@ -1,25 +1,37 @@
-import { useContext } from "react"
-import AuthContext from "../context/AuthContext"
+import  { useContext } from "react";
+import AuthContext from "../context/AuthContext"; 
 
 function SocialLogin() {
+    const { signInWithGoogle, user, loading } = useContext(AuthContext);
 
-    const {singInWithGoogle} = useContext(AuthContext)
+    const handleGoogleSignIn = () => {
+        signInWithGoogle() 
+            .then((result) => {
+                const user = result.user;
+                console.log("User signed in with Google: ", user);
+            })
+            .catch((error) => {
+                console.error("Google Sign-In Error: ", error.message);
+            });
+    };
 
-    const handelGoogleSingIn = () => {
-        singInWithGoogle()
-        .then(res => {
-            console.log(res)
-        })
-        .catch(error => {
-            console.log(error)
-        })
+    if (loading) {
+        return <div>Loading...</div>;
     }
 
     return (
         <div>
-            <button onClick={handelGoogleSingIn} className="btn btn-outline w-full">Google</button>
+            {user ? (
+                <div>
+                    <p>Welcome, {user.displayName}!</p>
+                </div>
+            ) : (
+                <button onClick={handleGoogleSignIn} className="btn btn-outline w-full">
+                    Sign in with Google
+                </button>
+            )}
         </div>
-    )
+    );
 }
 
-export default SocialLogin
+export default SocialLogin;

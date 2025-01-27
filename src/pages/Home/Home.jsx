@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet"
 import AllLostAndRecover from "./AllLostAndRecover"
 import Banner from "./Banner"
 import ShortDetailes from "./ShortDetailes"
+import Contact from "./Contact"
 
 function Home() {
     return (
@@ -13,8 +14,9 @@ function Home() {
 
             <div className="mt-10">
                 <Banner></Banner>
-                <AllLostAndRecover></AllLostAndRecover>
                 <ShortDetailes></ShortDetailes>
+                <AllLostAndRecover></AllLostAndRecover>
+                <Contact></Contact>
             </div>
         </>
     )
